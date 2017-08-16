@@ -1,6 +1,13 @@
+// Breakpoints
+$medium-screen: 600px;
+$large-screen: 900px;
+
 // Typography
 $base-font-family: $font-stack-system;
 $heading-font-family: $base-font-family;
+
+// Font Sizes
+$base-font-size: 1em;
 
 // Line height
 $base-line-height: 1.5;
@@ -8,11 +15,14 @@ $heading-line-height: 1.2;
 
 // Other Sizes
 $base-border-radius: 3px;
-$base-spacing: 1.5em;
+$base-spacing: $base-line-height * 1em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
+$black: #000;
+$white: #fff;
+
 $blue: #1565c0;
 $dark-gray: #333;
 $medium-gray: #999;
@@ -30,11 +40,9 @@ $base-border: 1px solid $base-border-color;
 $base-background-color: #fff;
 $secondary-background-color: tint($base-border-color, 75%);
 
-// Focus
-$focus-outline-color: transparentize($action-color, 0.4);
-$focus-outline-width: 3px;
-$focus-outline: $focus-outline-width solid $focus-outline-color;
-$focus-outline-offset: 2px;
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba($black, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
 
 // Animations
 $base-duration: 150ms;

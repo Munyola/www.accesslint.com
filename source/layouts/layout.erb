@@ -8,9 +8,13 @@
     <%= stylesheet_link_tag "main" %>
   </head>
   <body>
-    <main role="main">
+    <%= partial "partials/site_header" %>
+
+    <main class="p-site-container c-site-main" role="main">
       <%= yield %>
     </main>
+
+    <%= partial "partials/site_footer" %>
     <%= partial "partials/analytics" %>
   </body>
 </html>

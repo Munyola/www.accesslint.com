@@ -1,0 +1,9 @@
+.c-site-header {
+  @include padding($base-spacing null);
+  border-bottom: $base-border;
+  margin-bottom: $base-spacing * 2;
+}
+
+.c-site-header__title {
+  margin: 0;
+}

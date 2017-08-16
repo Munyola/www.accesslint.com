@@ -1,0 +1,5 @@
+.p-site-container {
+  @include margin(null auto);
+  @include padding(null $base-spacing);
+  max-width: 36em;
+}

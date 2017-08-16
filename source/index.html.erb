@@ -1,1 +1,48 @@
-<h1>Hello world</h1>
+<section>
+  <h2>
+    AccessLint is for keeping accessibility issues in check.
+  </h2>
+
+  <p>
+    AccessLint is designed to fit into your existing product development
+    workflow by running as part of continuous integration (CI), providing
+    accessibility alerts before new features go to production. As soon as a
+    developer pushes code to GitHub, AccessLint reviews the changes and comments automatically with any <em>new</em> violations.
+  </p>
+</section>
+
+<%= link_to(
+  "Connect with GitHub",
+  "https://github.com/apps/accesslint",
+  class: "c-button"
+) %>
+
+<hr>
+
+<h3>AccessLint checks</h3>
+<ul>
+  <li>
+    <code>img</code> elements have alternative text.
+  </li>
+  <li>
+    <code>input</code> tags have associated labels.
+  </li>
+</ul>
+
+<h3>Supported languages</h3>
+<ul>
+  <li>ERB</li>
+  <li>Haml</li>
+  <li>HTML</li>
+</ul>
+
+<hr>
+
+<section>
+  <p>
+    AccessLint is actively being built, so please sign up for our mailing list
+    below to receive updates.
+  </p>
+
+  <%= partial "partials/email_sign_up" %>
+</section>

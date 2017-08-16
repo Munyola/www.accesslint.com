@@ -1,0 +1,11 @@
+<footer class="c-site-footer" role="contentinfo">
+  <div class="p-site-container">
+    <p>&copy; 2014&thinsp;&ndash;&thinsp;<%= Date.today.year %> AccessLint</p>
+
+    <span>
+      Questions? Tweet
+      <%= link_to "@AccessLint", "https://twitter.com/accesslint" %>
+      or <%= mail_to ENV["SUPPORT_EMAIL"], "email support" %>.
+    </span>
+  </div>
+</footer>
