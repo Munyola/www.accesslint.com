@@ -9,7 +9,7 @@ This is the AccessLint website. It’s built with [Middleman].
 1. Get the code:
 
     ```
-    git clone https://github.com/accesslint/accesslint.com-new.git
+    git clone https://github.com/accesslint/www.accesslint.com.git
     ```
 
 1. Set up your machine:
