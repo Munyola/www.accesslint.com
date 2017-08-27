@@ -2,10 +2,23 @@
   <div class="p-site-container">
     <p>&copy; 2014&thinsp;&ndash;&thinsp;<%= Date.today.year %> AccessLint</p>
 
-    <span>
-      Questions? Tweet
-      <%= link_to "@AccessLint", "https://twitter.com/accesslint" %>
-      or <%= mail_to ENV["SUPPORT_EMAIL"], "email support" %>.
-    </span>
+    <ul>
+      <li>
+        <%= link_to(
+          "Privacy Policy",
+          "https://github.com/accesslint/policies/blob/master/PRIVACY.md",
+          target: "_blank"
+        ) %>
+      </li>
+      <li>
+        <%= link_to "Twitter", "https://twitter.com/accesslint" %>
+      </li>
+      <li>
+        <%= link_to "Slack Community", "http://slack.accesslint.com/" %>
+      </li>
+      <li>
+        <%= mail_to support_email, support_email %>
+      </li>
+    </ul>
   </div>
 </footer>

@@ -1,7 +1,27 @@
 <header class="c-site-header" role="banner">
   <div class="p-site-container">
-    <h1 class="c-site-header__title">
-      <a href="/">AccessLint</a>
+    <a href="/">
+      <%= svg("accesslint-logo") %>
+    </a>
+
+    <h1>
+      Automated and continuous web accessibility testing
     </h1>
+
+    <p>
+      AccessLint is a GitHub App that comments on pull requests with
+      accessibility issues.
+    </p>
+
+    <p>
+      AccessLint is a GitHub App that finds accessibility issues in your
+      pull requests.
+    </p>
+
+    <%= link_to(
+      "Add to GitHub",
+      github_app_url,
+      class: "c-button"
+    ) %>
   </div>
 </header>

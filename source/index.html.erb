@@ -1,48 +1,40 @@
 <section>
-  <h2>
-    AccessLint is for keeping accessibility issues in check.
-  </h2>
-
-  <p>
-    AccessLint brings automated and continuous web accessibility testing into
-    your development workflow, helping you spot issues before features go
-    to production. When a pull request is opened, AccessLint reviews the changes
-    and comments with any <em>new</em> violations.
-  </p>
+  <h2>AccessLint fits right into your GitHub flow</h2>
 </section>
 
-<%= link_to(
-  "Connect with GitHub",
-  "https://github.com/apps/accesslint",
-  class: "c-button"
-) %>
+<section>
+  <h2>Support your team and customers</h2>
 
-<hr>
+  <h3>We check for…</h3>
 
-<h3>AccessLint checks</h3>
-<ul>
-  <li>
-    <code>img</code> elements have alternative text.
-  </li>
-  <li>
-    <code>input</code> tags have associated labels.
-  </li>
-</ul>
-
-<h3>Supported languages</h3>
-<ul>
-  <li>ERB</li>
-  <li>Haml</li>
-  <li>HTML</li>
-</ul>
-
-<hr>
+  <ul>
+    <li>
+      <p><code>img</code> elements have alternative text.</p>
+      <p>read more on why this matters →</p>
+    </li>
+    <li>
+      <p><code>input</code> element have associated labels.</p>
+      <p>read more on why this matters →</p>
+    </li>
+  </ul>
+</section>
 
 <section>
-  <p>
-    AccessLint is actively being built, so please sign up for our mailing list
-    below to receive updates.
-  </p>
+  <h2>Supported templating languages</h2>
 
-  <%= partial "partials/email_sign_up" %>
+  <ul>
+    <li>HTML</li>
+    <li>ERB</li>
+    <li>Haml</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Pricing</h2>
+
+  <%= link_to(
+    "Add to GitHub",
+    github_app_url,
+    class: "c-button"
+  ) %>
 </section>
