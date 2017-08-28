@@ -1,6 +1,6 @@
 # Announcing AccessLint GitHub App
 
-August 29, 2017
+August 28, 2017
 
 Friends, we invite you to use the new [AccessLint GitHub App][github-app]. It
 finds accessibility issues in your Pull Requests, and let's you know right away.
