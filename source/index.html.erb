@@ -1,39 +1,48 @@
 <section>
   <h1>
-    AccessLint is for keeping accessibility issues in check.
+    Automated and continuous web accessibility&nbsp;testing
   </h1>
 
   <p>
-    AccessLint brings automated and continuous web accessibility testing into
-    your development workflow, helping you spot issues before features go
-    to production. When a pull request is opened, AccessLint reviews the changes
-    and comments with any <em>new</em> violations.
+    AccessLint is a GitHub App that finds accessibility issues in your
+    pull&nbsp;requests.
   </p>
+
+  <%= link_to(
+    "Add to GitHub",
+    "https://github.com/apps/accesslint",
+    class: "c-button"
+  ) %>
 </section>
 
-<%= link_to(
-  "Connect with GitHub",
-  "https://github.com/apps/accesslint",
-  class: "c-button"
-) %>
-
 <hr>
 
-<h2>AccessLint checks</h2>
-<ul>
-  <li>
-    <code>img</code> elements have alternative text.
-  </li>
-  <li>
-    <code>input</code> tags have associated labels.
-  </li>
-</ul>
+<section>
+  <h2>How it works</h2>
 
-<h2>Supported languages</h2>
-<ul>
-  <li>ERB</li>
-  <li>Haml</li>
-  <li>HTML</li>
-</ul>
+  <p>
+    AccessLint is super easy to install, and there's no setup. Pick which
+    projects you want reviewed, and AccessLint kicks into action. The next time
+    you open a Pull Request, AccessLint reviews it for issues and adds comments
+    to the code.
+  </p>
 
-<hr>
+  <h2>AccessLint checks</h2>
+
+  <ul>
+    <li>
+      <code>img</code> elements have alternative text.
+    </li>
+    <li>
+      <code>input</code> tags have associated labels.
+    </li>
+  </ul>
+
+  <h2>Supported languages</h2>
+
+  <ul>
+    <li>ERB</li>
+    <li>Haml</li>
+    <li>HTML</li>
+  </ul>
+</section>
