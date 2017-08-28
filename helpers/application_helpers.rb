@@ -1,4 +1,8 @@
 module ApplicationHelpers
+  def support_email
+    "support@accesslint.com"
+  end
+
   def svg(name)
     root = Middleman::Application.root
     images_path = config[:images_dir]
