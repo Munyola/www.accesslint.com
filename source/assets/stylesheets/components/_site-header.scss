@@ -1,7 +1,11 @@
 .c-site-header {
-  @include padding($base-spacing null);
+  @include padding(2rem null);
   border-bottom: $base-border;
   margin-bottom: $base-spacing * 2;
+
+  a {
+    font-weight: 600;
+  }
 }
 
 .c-site-header__title {
