@@ -1,3 +1,17 @@
 <% content_for :title, "Blog" %>
 
-<%= partial "announcing-accesslint-github-app" %>
+<h1>Blog</h1>
+
+<% blog.articles.each do |article| %>
+  <article>
+    <h2>
+      <a href="<%= article.url %>"><%= article.title %></a>
+    </h2>
+
+    <time datetime="<%= article.date.strftime("%Y-%m-%d") %>">
+      <%= article.date.strftime("%B %e, %Y") %>
+    </time>
+
+    <%= article.body %>
+  </article>
+<% end %>

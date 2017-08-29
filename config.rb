@@ -1,12 +1,22 @@
-activate :aria_current
-activate :autoprefixer
-
 set :css_dir, "assets/stylesheets"
 set :images_dir, "assets/images"
 
-page "/*.xml", layout: false
+activate :aria_current
+activate :autoprefixer
+activate :blog do |blog|
+  blog.generate_day_pages = false
+  blog.generate_month_pages = false
+  blog.generate_tag_pages = false
+  blog.generate_year_pages = false
+  blog.layout = "article"
+  blog.permalink = "{title}/index.html"
+  blog.prefix = "blog"
+  blog.sources = "{title}/index.html"
+end
+
 page "/*.json", layout: false
 page "/*.txt", layout: false
+page "/*.xml", layout: false
 
 proxy("_redirects", "netlify_redirects", ignore: true)
 

@@ -1,0 +1,13 @@
+<% content_for :title, current_page.title %>
+
+<% wrap_layout :layout do %>
+  <h1>
+    <%= current_page.title %>
+  </h1>
+
+  <time datetime="<%= current_page.date.strftime("%Y-%m-%d") %>">
+    <%= current_page.date.strftime("%B %e, %Y") %>
+  </time>
+
+  <%= current_page.body %>
+<% end %>
