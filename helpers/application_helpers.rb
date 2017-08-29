@@ -3,6 +3,17 @@ module ApplicationHelpers
     "https://github.com/apps/accesslint"
   end
 
+  def page_title
+    site_name = "AccessLint"
+    site_tagline = "Automated and continuous web accessibility testing"
+
+    if content_for?(:title)
+      [site_name, yield_content(:title)].join(" - ")
+    else
+      [site_name, site_tagline].join(" - ")
+    end
+  end
+
   def support_email
     "support@accesslint.com"
   end
