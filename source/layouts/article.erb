@@ -1,5 +1,11 @@
 <% content_for :title, current_page.title %>
 
+<% content_for :head do %>
+  <link rel="alternate"
+        type="application/rss+xml"
+        href="https://www.accesslint.com<%= blog.options.prefix %>/feed.xml">
+<% end %>
+
 <% wrap_layout :layout do %>
   <h1>
     <%= current_page.title %>
