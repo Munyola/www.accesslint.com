@@ -1,4 +1,8 @@
 module ApplicationHelpers
+  def github_app_url
+    "https://github.com/apps/accesslint"
+  end
+
   def support_email
     "support@accesslint.com"
   end
