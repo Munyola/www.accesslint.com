@@ -7,6 +7,8 @@ Friends, we invite you to use the new [AccessLint GitHub App][github-app]. It
 finds accessibility issues in your Pull Requests, and let's you know right away.
 The integration with GitHub makes installation quick and easy.
 
+![AccessLint Bot posts a Pull Request Review comment to an addition missing alt text](https://marketplace-screenshots.githubusercontent.com/454/a4d9968e-7adf-11e7-82a9-e441f10416fd)
+
 ## Why you'd use AccessLint
 
 You care about digital accessibility, and you want automated code review in your
