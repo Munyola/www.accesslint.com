@@ -3,15 +3,17 @@ set :images_dir, "assets/images"
 
 activate :aria_current
 activate :autoprefixer
+
 activate :blog do |blog|
   blog.generate_day_pages = false
   blog.generate_month_pages = false
-  blog.generate_tag_pages = false
   blog.generate_year_pages = false
   blog.layout = "article"
   blog.permalink = "{title}/index.html"
   blog.prefix = "blog"
   blog.sources = "{title}/index.html"
+  blog.tag_template = "blog/tag.html"
+  blog.taglink = "tags/{tag}/index.html"
 end
 
 page "/*.json", layout: false
