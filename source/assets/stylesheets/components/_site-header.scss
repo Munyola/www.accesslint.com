@@ -12,6 +12,12 @@
   margin: 0;
 }
 
+.c-site-header__nav {
+  a {
+    margin-left: $base-spacing;
+  }
+}
+
 .c-site-header .p-site-container {
   align-items: center;
   display: flex;

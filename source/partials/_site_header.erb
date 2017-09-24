@@ -4,6 +4,10 @@
       <%= svg("accesslint-logo") %>
     </a>
 
-    <%= current_link_to "Blog", "/blog/" %>
+    <div class="c-site-header__nav">
+      <%= current_link_to "Blog", "/blog/" %>
+      <%= link_to "Help", data.site.help_url %>
+      <%= link_to "Log in", data.site.github_log_in_url %>
+    </div>
   </div>
 </header>

@@ -1,4 +1,6 @@
 github_app_url: "https://github.com/apps/accesslint"
+github_log_in_url: "https://app.accesslint.com/auth/github"
+help_url: "https://help.accesslint.com"
 name: AccessLint
 support_email: "support@accesslint.com"
 tagline: Automated and continuous web accessibility testing
