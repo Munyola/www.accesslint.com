@@ -45,4 +45,4 @@ missing form labels, in the following templating languages:
 
 [**Add AccessLint to your GitHub**][github-app] (it's free!).
 
-[github-app]: https://github.com/apps/accesslint
+[github-app]: https://github.com/marketplace/accesslint
